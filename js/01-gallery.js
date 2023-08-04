@@ -22,3 +22,5 @@ function gallryMarkup (arr) {
 }; 
 
 console.log(gallryMarkup(galleryItems));
+
+galleryEl.insertAdjacentHTML('beforeend', gallryMarkup(galleryItems));
