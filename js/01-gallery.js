@@ -32,3 +32,5 @@ function cilckHandler(e) {
 
   
 };
+
+console.log(basicLightbox);
