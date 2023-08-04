@@ -24,3 +24,11 @@ function gallryMarkup (arr) {
 console.log(gallryMarkup(galleryItems));
 
 galleryEl.insertAdjacentHTML('beforeend', gallryMarkup(galleryItems));
+
+function cilckHandler(e) {
+  if (e.currectTarget === e.target) {
+    return;
+  };
+
+  
+};
