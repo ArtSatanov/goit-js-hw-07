@@ -22,4 +22,8 @@ function gallryMarkup(arr) {
     .join('');
 }
 
+galleryEl.insertAdjacentHTML('beforeend', gallryMarkup(galleryItems));
 
+console.log(SimpleLightbox);
+
+let lightbox = new SimpleLightbox('.gallery a', {captionsData:"alt", captionDelay: 250});
