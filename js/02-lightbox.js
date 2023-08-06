@@ -27,3 +27,14 @@ galleryEl.insertAdjacentHTML('beforeend', gallryMarkup(galleryItems));
 console.log(SimpleLightbox);
 
 let lightbox = new SimpleLightbox('.gallery a', {captionsData:"alt", captionDelay: 250});
+lightbox.on('show.simplelightbox', function () {
+  window.addEventListener('keydown', exitEsc);
+});
+
+
+
+function exitEsc(e) {
+  if (e.code === 'Escape') {
+    lightbox.close();
+  }
+};
